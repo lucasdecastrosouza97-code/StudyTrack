@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+   <meta charset="UTF-8">
+   <title>Sistema de Biblioteca</title>
+</head>
+<body>
+
+  <header>
+       <h1>Sistema de Planejamento de Estudos</h1>
+       </header> 
+
+<main>
+  <section>
+     <h2>Cadastro de Disciplinas</h2>
+     <form id="form-cadastro">
+  <div>
+     <label for="nome-disciplina">Nome:</label>
+     <input type="text" id="nome-disciplina" placeholder="Ex:Literatura" required>
+  </div>
+  <div>
+     <label for="carga-disciplina">Carga Horária:</label>
+     <input type="text" id="carga-disciplina" placeholder="Ex:40 horas" required>
+  </div>
+  
+  <button type="submit">Adicionar ao Sistema</button>
+    </form>
+ </section>
+
+<section>
+    <h2>Cadastro de Metas</h2>
+    <form id="form-metas">
+<div>
+    <label for="form-meta">Meta:</label>
+    <input type="text" id="form-meta" placeholder="Ex:Revisar Romantismo" required>
+ </div>
+<div>
+    <label for="form-meta2">Meta 2:</label>
+    <input type="text" id="form-meta2" placeholder="Ex:Estudar 2 horas" required>
+ </div>
+<button type="submit" id="registro">Adicionar ao Sistema</button>
+   </form>
+ </section>
+
+<section>
+   <h2>Registro de Horas Estudadas</h2>
+   <form id="registro-horas">
+<div>
+   <label for="form-disciplina">Disciplina:</label>
+   <input type="text" id="form-disciplina" placeholder required>
+</div>
+<div>
+   <label for="form-data">Data:</label>
+   <input type="date" id="form-data" placeholder required>
+</div>
+<div>
+   <label for="form-horas">Horas Estudadas:</label>
+   <input type="number" id="form-horas" placeholder required>
+</div>
+<button type="submit" id="registrar">Adicionar ao Sistema</button>
+    </form>
+ </section>
+
+<section>
+    <h2>Cálculo de Progresso</h2>
+    <form id="calculo-progresso">
+<div>
+<label for="total-previsto">Total previsto:</label>
+<input type="number" id="total-previsto" placeholder required>
+</div>
+<div>
+<label for="total-realizado">Total realizado:</label>
+<input type="number" id="total-realizado" placeholder required>
+</div>
+
+<button type="button" id="calculo">Calcular porcentagem</button>
+      </form> <p>Resultado: <span id="exibir-porcentagem">0</span>%</p>
+      <progress id="barra-progresso" value="0" max="100"></progress>
+   </section>
+<div>
+<section>
+    <h2>Listagem de Estudo</h2>
+    <form id="listagem-estudo">
+<div>
+<label for="horas-semana">Horas Estudadas na Semana:</label>
+<input type="number" id="horas-semana" required>
+</div>
+<div>
+<label for="horas-mes">Horas Estudadas no Mês:</label>
+<input type="number" id="horas-mes" placeholder required>
+</div>
+<button type="button" id="registrar-estudo">Listar Estudos</button>
+</form>
+</section>
+<section id="secao-relatorio">
+    <h2>Relatório de Desempenho</h2>
+    <div id="conteudo-relatorio">
+        <p>Disciplina: <span id="relatorio-disciplina">---</span></p>
+        <p>Progresso Atual: <span id="relatorio-progresso">0</span>%</p>
+        <p>Meta Semanal Atingida: <span id="relatorio-meta">---</span></p>
+    </div>
+</section>
+</main> 
+<script src="script.js"></script> 
+<link rel="stylesheet" href="style.css">
+</body>
+</html> 
